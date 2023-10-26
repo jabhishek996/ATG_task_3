@@ -1,0 +1,229 @@
+:root {
+    --border_no: none;
+    --font_family_roboto: Roboto;
+    --display_flex: flex;
+    --display_none:none;
+    
+    --box_shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --padding200: 200px;
+    --margin_r50:50px;
+    --margin_r10:10px;
+    --cursor_p: pointer;
+    --line_height_24:24px;
+
+    --hovour_btn_bgcolor: #40A9FF;
+    --focused_btn_bgcolor: #40A9FF;
+    --pressed_btn_bgcolor: #096DD9;
+    --disabled_btn_bg: #F5F5F5;
+    --disabled_btn_color: #D9D9D9;
+    --loading_btn_opacity: 65%;
+    /* --------Large_size_btn------- */
+
+    --large_btn_padding: 5px, 16px, 5px, 16px;
+    --large_primary_background_blue: #1890FF;
+    --large_default_background_white: #FFFFFF;
+    --large_width: 104px;
+    --large_height: 40px;
+    --large_color: #FFFFFF;
+    --large_border_radius: 2px;
+    --large_hovour_bg_color: #40A9FF;
+    --large_icon_height: 16px;
+    --large_icon_width: 16px;
+    --large_font_wight: 400;
+    --large_font_family: Roboto;
+    --large_font_size_large: 16px;
+    --large_default_btn_color: #262626;
+    --large_default_border: 1px solid #D9D9D9;
+
+    --large_input_width:70%;
+    --large_input_height:90%;
+    /* --------default_size_btn------- */
+
+    --default_btn_padding: 5px, 16px, 5px, 16px;
+    --default_btn_background_blue: #1890FF;
+    --default_btn_width: 98px;
+    --default_btn_height: 32px;
+    --default_btn_color: #FFFFFF;
+    --default_btn_border_radius: 2px;
+    --default_btn_hovour_bg_color: #40A9FF;
+    --default_btn_icon_height: 16px;
+    --default_btn_icon_width: 16px;
+    --default_btn_font_weight: 400;
+    --default_btn_font_family: Roboto;
+    --default_btn_font_size: 14px;
+
+
+    /* --------Small_size_btn------- */
+
+
+    --small_btn_padding: 1px, 8px, 1px, 8px;
+    --small_btn_background_blue: #1890FF;
+    --small_btn_width: 82px;
+    --small_btn_height: 24px;
+    --small_btn_color: #FFFFFF;
+    --small_btn_border_radius: 2px;
+    --hovour_bg_color: #40A9FF;
+    --icon_height: 16px;
+    --icon_width: 16px;
+    --fw_large: 400;
+    --font_family: Roboto;
+    --font_size_large: 16px;
+
+
+
+    /* 
+-------primary------
+-------default------
+-------dashed------
+-------text------
+-------link------ */
+}
+
+
+
+* {
+    font-family: var(--font_family_roboto)
+}
+
+
+.main {
+    display: var(--display_flex);
+    box-shadow: var(--box_shadow);
+    padding: var(--padding200)
+}
+
+.container {
+    margin-top: var(--padding200)
+}
+
+
+
+/* ------flexox----- */
+.flex_box_centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------default-btn-------- */
+.default_size {
+    padding: var(--default_btn_padding);
+    width: var(--default_btn_width);
+    height: var(--default_btn_height);
+    font-size: var(--default_btn_font_size);
+    font-weight: var(--default_btn_font_weight);
+    border-radius: var(--default_btn_border_radius);
+
+
+}
+/* ----------primary-default-state----------- */
+.Primary_default_state {
+    background: var(--default_btn_background_blue);
+    color: var(--default_btn_color);
+    border: var(--border_no);
+    cursor: var(--cursor_p);
+}
+/* ----------primary-default-state--active state----------- */
+.Primary_default_state:active {
+    background: var(--pressed_btn_bgcolor);
+    color: var(--default_btn_color);
+    border: var(--border_no);
+}
+/* ----------primary-default-state--hovor state----------- */
+.Primary_default_state:hover {
+    background: var(--hovour_bg_color);
+    color: var(--default_btn_color);
+    border: var(--border_no);
+}
+/* ----------primary-desabled-state-btn----------- */
+.Primary_disabled_state {
+    background: var(--disabled_btn_bg);
+    color: var(--disabled_btn_color);
+    border: var(--disabled_btn_color);
+}
+
+
+/* -------------input-type_large---------- */
+.input_large{
+    padding: var(--large_btn_padding);
+    width: var(--large_width);
+    height: var(--large_height);
+    border-radius: var(--large_border_radius);
+    font-size: var(--large_font_size_large);
+    font-weight: var(--large_font_wight);
+}
+
+/* -------------input--type_large default state---------- */
+.input_default_state{
+    background: var(--large_default_background_blue);
+    color: var(--large_default_btn_color);
+    border-radius: var(--large_border_radius);
+    border: var(--large_default_border);
+}
+
+
+
+.input_large img {
+    width: var(--icon_width);
+    height: var(--icon_height);
+    color: var(--default_btn_background_blue);
+}
+.input_large i{
+    margin-left: 10px;
+}
+.input_large input {
+    font-size: var(--large_font_size_large);
+    width: var(--large_input_width);
+    height: var(--large_input_height);
+    border: transparent;
+   
+}
+/* -------------input--type_large focus state---------- */
+.input_large input:focus {
+    border: var(--border_no);
+    outline: var(--border_no);
+    line-height: var(--line_height_24);
+    font-size: var(--large_font_size_large);
+    color: var(--large_default_btn_color);
+
+}
+
+.input_large input:hover {
+    color: var(--default_btn_hovour_bg_color);
+}
+
+.input_large:hover {
+    color: var(--default_btn_hovour_bg_color);
+}
+
+ .input_large:active {
+    border:1px solid var(--default_btn_hovour_bg_color);
+    color:var(--pressed_btn_bgcolor);
+} 
+
+.btn1 svg {
+    display: var(--display_none);
+    margin-right:var(--margin_r10)
+}
+
+.margin_r50{
+    margin-right: var(--margin_r50);
+}
+.margin_r10{
+    margin-right: var(--margin_r10);
+}
+
+
+
+/* -----------Loading_animation----------- */
+path {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: dash 4s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
